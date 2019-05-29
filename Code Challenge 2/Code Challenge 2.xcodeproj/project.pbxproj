@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A3C162A228F3A87002CD015 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3C1629228F3A87002CD015 /* FoodCell.swift */; };
 		9AAB49AF228DC66C00BB94BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49AE228DC66C00BB94BA /* AppDelegate.swift */; };
 		9AAB49B4228DC66C00BB94BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB49B2228DC66C00BB94BA /* Main.storyboard */; };
 		9AAB49B6228DC67000BB94BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB49B5228DC67000BB94BA /* Assets.xcassets */; };
 		9AAB49B9228DC67000BB94BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB49B7228DC67000BB94BA /* LaunchScreen.storyboard */; };
 		9AAB49C1228DC76300BB94BA /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49C0228DC76300BB94BA /* FoodTableViewController.swift */; };
 		9AAB49C3228DC77E00BB94BA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49C2228DC77E00BB94BA /* DetailViewController.swift */; };
-		9AAB49C5228DC7D000BB94BA /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49C4228DC7D000BB94BA /* FoodCell.swift */; };
 		9AAB49C7228DC82700BB94BA /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49C6228DC82700BB94BA /* Stack.swift */; };
 		9AAB49CA228DC8A700BB94BA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49C8228DC8A700BB94BA /* Model.xcdatamodeld */; };
 		9AAB49CC228DD0D300BB94BA /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB49CB228DD0D300BB94BA /* FoodController.swift */; };
@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A3C1629228F3A87002CD015 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		9AAB49AB228DC66C00BB94BA /* Code Challenge 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Challenge 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAB49AE228DC66C00BB94BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AAB49B3228DC66C00BB94BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		9AAB49BA228DC67000BB94BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AAB49C0228DC76300BB94BA /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
 		9AAB49C2228DC77E00BB94BA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		9AAB49C4228DC7D000BB94BA /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		9AAB49C6228DC82700BB94BA /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		9AAB49C9228DC8A700BB94BA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		9AAB49CB228DD0D300BB94BA /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
@@ -67,12 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				9AAB49C0228DC76300BB94BA /* FoodTableViewController.swift */,
-				9AAB49C4228DC7D000BB94BA /* FoodCell.swift */,
 				9AAB49C2228DC77E00BB94BA /* DetailViewController.swift */,
 				9AAB49CD228DE0EE00BB94BA /* Food.swift */,
 				9AAB49CB228DD0D300BB94BA /* FoodController.swift */,
 				9AAB49C6228DC82700BB94BA /* Stack.swift */,
 				9AAB49B2228DC66C00BB94BA /* Main.storyboard */,
+				9A3C1629228F3A87002CD015 /* FoodCell.swift */,
 				9AAB49C8228DC8A700BB94BA /* Model.xcdatamodeld */,
 				9AAB49AE228DC66C00BB94BA /* AppDelegate.swift */,
 				9AAB49B5228DC67000BB94BA /* Assets.xcassets */,
@@ -154,9 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AAB49C7228DC82700BB94BA /* Stack.swift in Sources */,
+				9A3C162A228F3A87002CD015 /* FoodCell.swift in Sources */,
 				9AAB49C3228DC77E00BB94BA /* DetailViewController.swift in Sources */,
 				9AAB49CC228DD0D300BB94BA /* FoodController.swift in Sources */,
-				9AAB49C5228DC7D000BB94BA /* FoodCell.swift in Sources */,
 				9AAB49AF228DC66C00BB94BA /* AppDelegate.swift in Sources */,
 				9AAB49CE228DE0EE00BB94BA /* Food.swift in Sources */,
 				9AAB49C1228DC76300BB94BA /* FoodTableViewController.swift in Sources */,

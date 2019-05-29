@@ -40,8 +40,8 @@ class FoodController {
     }
     
     
-    func createFoodItem(name: String, calories: String, rating: String) {
-        let _ = Food(name: name, calories: calories, rating: rating)
+    func createFoodItem(name: String, calories: String, rating: String, date: String) {
+        let _ = Food(name: name, calories: calories, rating: rating, date: date)
         saveToPersistentStorage()
         
     }

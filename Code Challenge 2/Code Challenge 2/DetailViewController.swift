@@ -27,6 +27,8 @@ class DetailViewController: UIViewController {
             nameLabel.text = food.name
             caloriesLabel.text = food.calories
             ratingLabel.text = food.rating
+            dateLabel.text = food.date
+            
         }
     }
     
@@ -34,13 +36,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        setDate()
     }
     
     
     
-    
+    func setDate() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd"
+        dateLabel.text = dateFormatter.string(from: Date())
+        
+    }
     
     
     
@@ -48,15 +55,17 @@ class DetailViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let name = nameLabel.text,
             let calories = caloriesLabel.text,
+            let date = dateLabel.text,
             let rating = ratingLabel.text else {return}
         
         if let food = food {
             food.name = name
             food.calories = calories
             food.rating = rating
+            food.date = date
             FoodController.sharedController.saveToPersistentStorage()
         } else {
-            FoodController.sharedController.createFoodItem(name: name, calories: calories, rating: rating)
+            FoodController.sharedController.createFoodItem(name: name, calories: calories, rating: rating, date: date)
         }
         
        self.navigationController?.popViewController(animated: true)

@@ -13,11 +13,11 @@ import CoreData
 
 
 extension Food {
-    convenience init?(name: String, calories: String, rating: String, context: NSManagedObjectContext = Stack.context) {
+    convenience init?(name: String, calories: String, rating: String, date: String, context: NSManagedObjectContext = Stack.context) {
         
         self.init(context: context)
         self.name = name
-        self.date = Date()
+        self.date = date
         self.rating = rating
         self.calories = calories
       
